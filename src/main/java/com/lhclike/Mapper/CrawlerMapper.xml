@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hyzx.qbasic.dao.CrawlerMapper">
+
+    <insert id="addCmsContent" parameterType="com.lhclike.pojo.CmsContentPO">
+        insert into cms_content (contentId,
+                                 title,
+                                 releaseDate,
+                                 content)
+        values (#{contentId,jdbcType=VARCHAR},
+                #{title,jdbcType=VARCHAR},
+                #{releaseDate,jdbcType=TIMESTAMP},
+                #{content,jdbcType=LONGVARCHAR})
+    </insert>
+</mapper>
+
