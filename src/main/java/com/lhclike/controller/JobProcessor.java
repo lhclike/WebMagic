@@ -53,8 +53,6 @@ public class JobProcessor implements PageProcessor {
         // 等待页面加载完成，这里可以使用显式等待或隐式等待
 */
 
-
-
 //        // 将driver页面源码传给WebMagic处理
 //            Html html = new Html(driver.getPageSource());
 
@@ -76,15 +74,6 @@ public class JobProcessor implements PageProcessor {
         }
         page.putField("itemInfo" , itemList);
     }
-
-
-
-
-
-
-    //解析页面，获取商品详情信息，保存数据
-
-
 //        // 设置 WebDriver 路径
 //        System.setProperty("webdriver.chrome.driver", "F:\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 //
@@ -94,19 +83,12 @@ public class JobProcessor implements PageProcessor {
 //        options.addArguments("--remote-allow-origins=*");
 //        WebDriver driver = new ChromeDriver(options);
 //        options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36");
-//
-//
 //        driver.get(page.getUrl().toString());
 //        // 等待页面加载完成，这里可以使用显式等待或隐式等待
 //        try {
 //            Thread.sleep(10000); // 示例，实际应用中可用更好的等待方法
-//
-//
 //        // 将driver页面源码传给WebMagic处理
 //        Html html = new Html(driver.getPageSource());
-
-
-
        /* List<String> images=page.getHtml().xpath("//img/@src").all();
         page.putField("imageUrls", images);
         page.addTargetRequests(images);*/
